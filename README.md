@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+# SkyMart
+React application with authentication, routing, product management (listing, filtering, 
+sorting, searching), and an Add Product form. 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#### Deployed Link: https://skymat.netlify.app/
 
-## Available Scripts
+## Technology Used
+- ReactJs,
+- Javascript,
+- Reduxt Toolkit (For State Manegement),
+- React Hook Form (For Form Management),
+- Tailwind CSS (For Designing)
+- Json Dataset
 
-In the project directory, you can run:
+## Feature
+ - Authentication
+   - Implemented Login & Signup (email + password). 
+   -  Used Firebase Authentication.
+   -  Authenticated users can access the app, unauthenticated users will be redirected to 
+      /login
+ - Routing
+   -  /login → Login page (public). 
+   -  /signup → Signup page (public). 
+   - /products → Products list page (protected). 
+   - /add-product → Add Product form page (protected). 
+ - Products Page
+   - Shown a list of products (useed a JSON dataset with 40 products). 
+   - Displayed max 20 items per page (simple pagination).
+   - Added Filters( Search by product name , Status,category ,price rage,filter by brand name)
+ - Add Product Page (/add-product)
+   - Added Form fields to add product in  product listing page
 
-### `npm start`
+ ## Have a Look on ScreenShots
+   
+<img width="834" height="859" alt="signuppage" src="https://github.com/user-attachments/assets/2d097e00-53bf-4e91-b269-1e3d07084c38" />
+<img width="864" height="778" alt="loginPage" src="https://github.com/user-attachments/assets/8630be27-b5d0-4a88-a95a-d30c12584387" />
+<img width="1893" height="858" alt="productpage1" src="https://github.com/user-attachments/assets/c4d3a81b-f6c8-4369-8484-34578e7ad814" />
+<img width="1892" height="876" alt="Furniture" src="https://github.com/user-attachments/assets/6bf3795f-e874-4ce2-87a4-3b5494da02ab" />
+<img width="1890" height="887" alt="Electronics" src="https://github.com/user-attachments/assets/371579de-1dbd-439c-a4ec-de109686c27c" />
+<img width="1892" height="887" alt="seacrh" src="https://github.com/user-attachments/assets/57f93df1-2514-4db4-a072-1e9291748622" />
+<img width="1729" height="889" alt="addproduct" src="https://github.com/user-attachments/assets/307e52c7-a5f1-4ec2-be37-6b0a2ac8f7c7" />
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
