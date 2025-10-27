@@ -16,7 +16,7 @@ function ProductListing() {
     <>
       <Header />
       <div className="min-h-screen bg-gray-50 p-1 ">
-        <div className="flex flex-col md:flex-row gap-3 px-2 py-2">
+        <div className="flex flex-col md:flex-row gap-8 px-8 py-3">
           <Filters />
           <div className="flex flex-col item-start items-center justify-items-center">
             <div className="w-full flex justify-between items-center flex-wrap">
@@ -26,7 +26,7 @@ function ProductListing() {
               {paginated.length > 0 && <Pagination />}
             </div>
             {paginated.length > 0 ? (
-              <div className="flex grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-20 justify-items-center">
+              <div className="flex grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-9 justify-items-center">
                 {paginated.map((product) => (
                   <ProductCard productId={product?.id} product={product} />
                 ))}
