@@ -15,20 +15,20 @@ function ProductListing() {
   return (
     <>
       <Header />
-      <div className="min-h-screen bg-gray-50 p-6 ">
-        <div className="flex flex-col md:flex-row gap-3 px-8 py-3 ">
+      <div className="min-h-screen bg-gray-50 p-1 ">
+        <div className="flex flex-col md:flex-row gap-3 px-2 py-2">
           <Filters />
-          <div>
-            <div className="flex justify-between items-center">
+          <div className="flex flex-col item-start items-center justify-items-center">
+            <div className="w-full flex justify-between items-center flex-wrap">
               <p className="text-lg font-semibold mb-4 text-gray-800">
                 Total Products ({filteredProducts.length})
               </p>
               {paginated.length > 0 && <Pagination />}
             </div>
             {paginated.length > 0 ? (
-              <div className="flex-1 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
+              <div className="flex grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-20 justify-items-center">
                 {paginated.map((product) => (
-                  <ProductCard product={product} />
+                  <ProductCard productId={product?.id} product={product} />
                 ))}
               </div>
             ) : (

@@ -1,8 +1,8 @@
-const ProductCard = ({ product }) => {
+const ProductCard = ({ productId ,product }) => {
   return (
     <div
       className=" max-w-xs w-64 bg-white shadow-lg rounded-2xl overflow-hidden hover:scale-105 transition-transform duration-300"
-      key={product?.id}
+      key={productId}
     >
       <div className="flex flex-col items-center justify-items-center">
         <div className="py-3 ">
