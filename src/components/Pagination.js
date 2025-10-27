@@ -9,7 +9,7 @@ const Pagination = () => {
   const totalPages = Math.ceil(filteredProducts.length / itemsPerPage);
 
   return (
-    <div className="flex justify-center  gap-3 mb-5">
+    <div className="flex justify-center gap-3 mb-4">
       <button
         onClick={() => dispatch(setCurrentPage(Math.max(currentPage - 1, 1)))}
         disabled={currentPage === 1}
